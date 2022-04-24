@@ -1,0 +1,67 @@
+/*Syntax CSS
+
+Selector {property: value; property: value;}
+
+*/
+
+/* (*) symbol specify the universal selector meaning, we can select all the HTML elements */
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+h1, h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	height: 250px; 
+	width: 250px;
+}
+
+#landing {
+	/*vh - viewport height - a determined or measured percentage of the height of the device you are viewing your webpage in.*/
+	height: 80vh;
+	/*flexbox - display: flex - will allow us to arrange or layout the elements inside our landing sectioin vertically and horizontically.*/
+	/*By default, display: flex, arranges elements inside the parent element in a row*/
+	display: flex;
+	/*flex-direction changes the direction of the elements inside an element with display: flex.*/
+	/*flex-direction: column - arranges the flex items into a column.*/
+	flex-direction: column;
+	/*align-items - arranges elements vertically if the flex items are in a row. However, it arranges elements horizontically if the flex items are in a column.*/
+	/*align-items: center; - arranges all flex items in to be centered horizontically.*/
+	align-items: center;
+	/*
+		justify-content: - arranges elements horizontically if the flex items are in a row. However, it arranges elements horizontically if the flex items are in a column.;
+	*/
+	/*justify-content: center; - arranges all flex items in the flex parent to be centered vertically if the flex items are in a column.*/
+	justify-content: center;
+}
+
+#gallery {
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.tools {
+	/*border - line around the element*/
+	border: 5px solid #f2f2f2;
+	/*margin - space outside the element*/
+	margin: 20px;
+	/*padding - space inside the element*/
+	padding: 25px;
+	height: 200px;
+	/*percentage as a measurement for width is based on the total width of the parent element*/
+	width: 75%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
